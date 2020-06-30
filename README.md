@@ -1,10 +1,12 @@
 # headless-wordpress
 headless wordpress site working through the api rather than mamp/lamp/xampp
 
+```
 # create new folder with file name 'docker-compose.yaml'
 # copy and paste below code into file and save. Edit any sensitive information as required
+```
 
-===============================================
+```
 version: '3'
 
 services:
@@ -53,10 +55,12 @@ networks:
   wpsite:
 volumes:
   db_data:
-================================================
+```
 
+```
 # open terminal and type:
 $ docker-compose up -d
 
 # To Tear Down
 $ docker-compose down --volumes
+```
