@@ -63,4 +63,16 @@ $ docker-compose up -d
 
 # To Tear Down
 $ docker-compose down --volumes
+
+# list containers
+docker ps -aq
+
+# stop running containers
+docker stop $(docker ps -aq)
+
+# remove container images
+docker rmi $(docker images -q)
+
+# remove containers
+docker rm $(docker ps -aq)
 ```
